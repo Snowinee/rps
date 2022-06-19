@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e01b37056.js"></script>
+    <title>RPS Project</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <section id="displaySelection" class="displaySelection">
+        <div id="player" class="selection">
+            <button><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button><i class="fa-solid fa-hand"></i></button>
+            <button><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+
+        <div id="bot" class="selection">
+            <button data-bot-id="rock"><i class="botSelectionList fa-solid fa-hand-back-fist"></i></button>
+            <button data-bot-id="paper"><i class="botSelectionList fa-solid fa-hand"></i></button>
+            <button data-bot-id="scissors"><i class="botSelectionList fa-solid fa-hand-scissors"></i></button>
+        </div>
+    </section>
+
+    <section class="userSelections">
+        <div id="selection">
+            <button data-id="rock" class="userSelection"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button data-id="paper" class="userSelection"><i class="fa-solid fa-hand"></i></button>
+            <button data-id="scissors" class="userSelection"><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+        <section class="stats">
+            <p>User Wins: <span id="wins">0</span></p>
+            <p>Bot Wins: <span id="lose">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button id="resetBtn">Reset</button>
+            <p id="winner"></p>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

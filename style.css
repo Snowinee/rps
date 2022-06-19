@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 50px;
+}
+
+:root {
+    --textColor: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.displaySelection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: max-content;
+    border: 3px solid black;
+    margin: 60px auto 0 auto;
+    padding: 30px;
+    border-radius: 35px;
+}
+
+.selection {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.selection i, .userSelection i {
+    padding: 15px 20px;
+    font-size: 32px;
+    color: white;
+}
+
+.selection button {
+    background-color: black;
+    border-radius: 35px;
+}
+
+.active {
+    background-color: gray !important;
+    transform: scale(1.2);
+    border: 1px solid gray;
+}
+
+.userSelections {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.userSelections button {
+    border-radius: 30px;
+    background-color: brown;
+    border: none;
+    transition: all 0.2s;
+}
+
+.userSelections button:hover {
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+.userSelections button:active {
+    background-color: black;
+}
+
+.stats {
+    bottom: 35px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.stats p, .stats span {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.stats span {
+    color: brown;
+}
+
+#resetBtn {
+    padding: 15px 20px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: black;
+}
+
+#winner {
+    margin-top: 20px;
+    font-weight: 20px;
+    color: brown;
+    font-weight: 700;
+    text-align: center;
+}
